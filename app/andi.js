@@ -17,7 +17,7 @@ var icons_url = host_url+"icons/";
 var app = express();
 
 //Load andi.css file immediately to minimize page flash
-app.get("/", function(req, res) {
+app.get("./", function(req, res) {
 (function(){
 	var head = document.getElementsByTagName("head")[0];
 	var andiCss = document.createElement("link");
