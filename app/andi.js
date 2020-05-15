@@ -18,7 +18,7 @@ var PORT = process.env.PORT || 3000;
 var app = express();
 
 //Load andi.css file immediately to minimize page flash
-app.get("/", function(req, res) {
+// app.get("/", function(req, res) {
 (function(){
 	var head = document.getElementsByTagName("head")[0];
 	var andiCss = document.createElement("link");
@@ -4067,7 +4067,7 @@ var oldIE = false; //used to determine if old version of IE is being used.
 		launchAndi(); //initialize ANDI
 	}
 })();
-});
+// });
 
 app.listen(PORT, function() {
 	console.log("App running on port " + PORT + "!");
