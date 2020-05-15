@@ -4,7 +4,7 @@
 //=============================================//
 // I added this comment
 // import express from "express";
-var express = require("express");
+import express, { urlencoded, json, static } from "express";
 var andiVersionNumber = "27.0.4";
 
 //==============//
@@ -16,10 +16,7 @@ var help_url = host_url+"help/";
 var icons_url = host_url+"icons/";
 
 var app = express();
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-// Make public a static folder
-app.use(express.static("public"));
+
 //Load andi.css file immediately to minimize page flash
 app.get("/", function(req, res) {
 (function(){
