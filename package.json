@@ -2,20 +2,20 @@
   "name": "ANDI",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danieljudsonblair/andi.git"
+    "url": "git+https://github.com/danieljudsonblair/ANDI.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danieljudsonblair/andi/issues"
+    "url": "https://github.com/danieljudsonblair/ANDI/issues"
   },
-  "homepage": "https://github.com/danieljudsonblair/andi#readme",
+  "homepage": "https://github.com/danieljudsonblair/ANDI#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
