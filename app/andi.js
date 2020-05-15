@@ -6,7 +6,7 @@
 // import express from "express";
 // import express, { urlencoded, json, static } from "express";
 var andiVersionNumber = "27.0.4";
-var express = require('../node_modules/express');
+var express = require('../node_modules/express/index');
 
 //==============//
 // ANDI CONFIG: //
