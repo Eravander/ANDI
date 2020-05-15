@@ -13,6 +13,7 @@ var express = require('../node_modules/express/index.js');
 var host_url = "https://salty-depths-02475.herokuapp.com/";
 var help_url = host_url+"help/";
 var icons_url = host_url+"icons/";
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 
@@ -4066,4 +4067,8 @@ var oldIE = false; //used to determine if old version of IE is being used.
 		launchAndi(); //initialize ANDI
 	}
 })();
-})
+});
+
+app.listen(PORT, function() {
+	console.log("App running on port " + PORT + "!");
+  });
