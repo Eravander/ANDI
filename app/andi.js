@@ -3,17 +3,24 @@
 //Created By Social Security Administration    //
 //=============================================//
 // I added this comment
+import express from "express";
 var andiVersionNumber = "27.0.4";
 
 //==============//
 // ANDI CONFIG: //
 //==============//
 //URLs
-var host_url = "https://www.ssa.gov/accessibility/andi/";
+var host_url = "https://salty-depths-02475.herokuapp.com/";
 var help_url = host_url+"help/";
 var icons_url = host_url+"icons/";
 
+var app = express();
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+// Make public a static folder
+app.use(express.static("public"));
 //Load andi.css file immediately to minimize page flash
+app.get("/scrape", function(req, res) {
 (function(){
 	var head = document.getElementsByTagName("head")[0];
 	var andiCss = document.createElement("link");
@@ -4062,3 +4069,4 @@ var oldIE = false; //used to determine if old version of IE is being used.
 		launchAndi(); //initialize ANDI
 	}
 })();
+})
