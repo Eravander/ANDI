@@ -21,7 +21,7 @@ app.use(express.json());
 // Make public a static folder
 app.use(express.static("public"));
 //Load andi.css file immediately to minimize page flash
-app.get("/scrape", function(req, res) {
+app.get("/", function(req, res) {
 (function(){
 	var head = document.getElementsByTagName("head")[0];
 	var andiCss = document.createElement("link");
