@@ -22,6 +22,7 @@ fANDI.analyze = function(){
 	
 	//Loop through every visible element and run tests
 	$(TestPageData.allVisibleElements).each(function(){
+		console.log(this);
 		if($(this).is(":focusable,canvas")){//If element is focusable, search for accessibility components.
 			andiData = new AndiData(this);
 			
