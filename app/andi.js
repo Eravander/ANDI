@@ -10,7 +10,7 @@ var express = require('../node_modules/express/index.js');
 // ANDI CONFIG: //
 //==============//
 //URLs
-var host_url = "https://salty-depths-02475.herokuapp.com/";
+var host_url = "https://salty-depths-02475.herokuapp.com/app/";
 var help_url = host_url+"help/";
 var icons_url = host_url+"icons/";
 var PORT = process.env.PORT || 3000;
