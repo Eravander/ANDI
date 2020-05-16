@@ -12,7 +12,7 @@ var dandy = function() {
 	// ANDI CONFIG: //
 	//==============//
 	//URLs
-	var host_url = "https://salty-depths-02475.herokuapp.com/ANDI/app/";
+	var host_url = "https://salty-depths-02475.herokuapp.com/";
 	var help_url = host_url + "help/";
 	var icons_url = host_url + "icons/";
 
