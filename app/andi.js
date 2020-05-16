@@ -11,7 +11,7 @@ function myFunction() {
 	// ANDI CONFIG: //
 	//==============//
 	//URLs
-	var host_url = "https://danieljudsonblair.github.io/ANDI/";
+	var host_url = "https://salty-depths-02475.herokuapp.com/";
 	var help_url = host_url + "help/";
 	var icons_url = host_url + "icons/";
 
