@@ -4075,4 +4075,4 @@ var dandy = function() {
 
 }
 
-module.exports = dandy;
+module.exports = dandy();
