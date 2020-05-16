@@ -4,13 +4,13 @@ var express = require('../node_modules/express/index.js');
 // var andi = require('./andi');
 var app = express();
 var PORT = process.env.PORT || 3000;
-var andi = app.use(require('./andi'));
+// var andi = app.use(require('./andi'));
 
 
 app.get("/", function (req, res) {
     console.log("your mother");
-    console.log(document);
- //   andi.dandy();
+    console.log(req.body);
+    // andi.dandy();
 
 })
 app.listen(PORT, function () {
