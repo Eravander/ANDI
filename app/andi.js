@@ -13,7 +13,7 @@ app.listen(PORT, function () {
 app.get("/", function (req, res) {
 //	document = req.document;
 	console.log("in andi.js");
-	console.log(req);
+	console.log(req.body);
 res = function() {
 	console.log("in response function");
 	var andiVersionNumber = "27.0.4";
