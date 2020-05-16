@@ -3,7 +3,7 @@
 //Created By Social Security Administration    //
 //=============================================//
 
-var andi = function() {
+
 
 	var andiVersionNumber = "27.0.4";
 
@@ -4072,5 +4072,4 @@ var andi = function() {
 			launchAndi(); //initialize ANDI
 		}
 	})();
-}
-module.exports.andi = andi;
+
