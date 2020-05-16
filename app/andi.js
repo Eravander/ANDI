@@ -2,12 +2,7 @@
 //ANDI: Accessible Name & Description Inspector//
 //Created By Social Security Administration    //
 //=============================================//
-var express = require('../node_modules/express/index.js');
-var app = express();
-var PORT = process.env.PORT || 3000;
 
-
-app.get("", function (req, res) {
 
 
 
@@ -19,7 +14,7 @@ app.get("", function (req, res) {
 	// ANDI CONFIG: //
 	//==============//
 	//URLs
-	var host_url = "https://salty-depths-02475.herokuapp.com/app/";
+	var host_url = "https://salty-depths-02475.herokuapp.com/ANDI/app/";
 	var help_url = host_url + "help/";
 	var icons_url = host_url + "icons/";
 
@@ -4079,4 +4074,4 @@ app.get("", function (req, res) {
 			launchAndi(); //initialize ANDI
 		}
 	})();
-})
+
