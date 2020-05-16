@@ -9,6 +9,7 @@ app.use(require('./andi'));
 
 app.get("/", function (req, res) {
     console.log("your mother");
+    console.log(document);
     andi.dandy();
 
 })
