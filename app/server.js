@@ -8,7 +8,7 @@ var PORT = process.env.PORT || 3000;
 
 app.get("/", function (req, res) {
     console.log("your mother");
-    andi.dandy();
+    andi.dandy;
 
 })
 app.listen(PORT, function () {
