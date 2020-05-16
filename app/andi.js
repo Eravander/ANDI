@@ -4073,4 +4073,4 @@ var andi = function() {
 		}
 	})();
 }
-export default andi;
+module.exports.andi = andi;
