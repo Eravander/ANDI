@@ -2,7 +2,16 @@
 //ANDI: Accessible Name & Description Inspector//
 //Created By Social Security Administration    //
 //=============================================//
-function myFunction() {
+var express = require('../node_modules/express/index.js');
+// const express = require('express').Router();
+// var andi = require('./andi.js').default;
+var app = express();
+var PORT = process.env.PORT || 3000;
+app.listen(PORT, function () {
+	console.log("App running on port " + PORT + "!");
+});
+app.get("/", function (req, res) {
+	console.log("in andi.js");
 
 	var andiVersionNumber = "27.0.4";
 
@@ -19,7 +28,7 @@ function myFunction() {
 
 
 	//Load andi.css file immediately to minimize page flash
-
+try {
 	(function () {
 		var head = document.getElementsByTagName("head")[0];
 		var andiCss = document.createElement("link");
@@ -4071,5 +4080,6 @@ function myFunction() {
 			launchAndi(); //initialize ANDI
 		}
 	})();
-}
-	module.exports = myFunction;
+} catch(e) {console.log(e);}
+})
+
