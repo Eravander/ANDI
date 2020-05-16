@@ -4083,6 +4083,8 @@ res = function() {
 			launchAndi(); //initialize ANDI
 		}
 	})();
+	console.log(res);
 }
+res();
 })
 
