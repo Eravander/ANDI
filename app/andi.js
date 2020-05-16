@@ -3,9 +3,7 @@
 //Created By Social Security Administration    //
 //=============================================//
 
-
-
-
+var dandy = function() {
 
 	var andiVersionNumber = "27.0.4";
 
@@ -4075,3 +4073,6 @@
 		}
 	})();
 
+}
+
+module.exports = dandy;
