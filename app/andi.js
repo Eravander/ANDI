@@ -11,10 +11,11 @@ app.listen(PORT, function () {
 	console.log("App running on port " + PORT + "!");
 });
 app.get("/", function (req, res) {
-	document = req.document;
+//	document = req.document;
 	console.log("in andi.js");
-	console.log(req);
-
+//	console.log(req);
+res = function() {
+	console.log("in response function");
 	var andiVersionNumber = "27.0.4";
 
 
@@ -30,7 +31,7 @@ app.get("/", function (req, res) {
 
 
 	//Load andi.css file immediately to minimize page flash
-try {
+
 	(function () {
 		var head = document.getElementsByTagName("head")[0];
 		var andiCss = document.createElement("link");
@@ -4082,6 +4083,6 @@ try {
 			launchAndi(); //initialize ANDI
 		}
 	})();
-} catch(e) {console.log(e);}
+}
 })
 
