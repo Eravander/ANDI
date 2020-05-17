@@ -23,7 +23,7 @@
 	// ANDI CONFIG: //
 	//==============//
 	//URLs
-	var host_url = "https://danieljudsonblair.github.io/ANDI/app/";
+	var host_url = "https://danieljudsonblair.github.io/ANDI/";
 	var help_url = host_url + "help/";
 	var icons_url = host_url + "icons/";
 
