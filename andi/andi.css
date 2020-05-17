@@ -132,9 +132,9 @@ body.ANDI508-testPage
 	{text-decoration:underline; font-family:Verdana; background:none;}
 
 #ANDI508 .ANDI508-heading
-	{font-size:24pt; color:white !important; white-space:nowrap; margin:0; display:inline; position:static;}
+	{font-size:12pt; color:white !important; white-space:nowrap; margin:0; display:inline; position:static;}
 #ANDI508 .ANDI508-heading span
-	{font-size:24pt; color:white !important; font-weight:normal;}
+	{font-size:12pt; color:white !important; font-weight:normal;}
 
 #ANDI508 .ANDI508-screenReaderOnly
 	{height:0; width:0px; overflow:hidden; position:absolute;}
