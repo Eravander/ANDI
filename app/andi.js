@@ -2,19 +2,19 @@
 //ANDI: Accessible Name & Description Inspector//
 //Created By Social Security Administration    //
 //=============================================//
-var express = require('../node_modules/express/index.js');
-// const express = require('express').Router();
-// var andi = require('./andi.js').default;
-var app = express();
-var PORT = process.env.PORT || 3000;
-app.listen(PORT, function () {
-	console.log("App running on port " + PORT + "!");
-});
-app.get("/", function (req, res) {
-//	document = req.document;
-	console.log("in andi.js");
-	console.log(req.body);
-res = function() {
+// var express = require('../node_modules/express/index.js');
+// // const express = require('express').Router();
+// // var andi = require('./andi.js').default;
+// var app = express();
+// var PORT = process.env.PORT || 3000;
+// app.listen(PORT, function () {
+// 	console.log("App running on port " + PORT + "!");
+// });
+// app.get("/", function (req, res) {
+// //	document = req.document;
+// 	console.log("in andi.js");
+// 	console.log(req.body);
+// res = function() {
 	console.log("in response function");
 	var andiVersionNumber = "27.0.4";
 
@@ -23,7 +23,7 @@ res = function() {
 	// ANDI CONFIG: //
 	//==============//
 	//URLs
-	var host_url = "https://salty-depths-02475.herokuapp.com/";
+	var host_url = "https://danieljudsonblair.github.io/ANDI/";
 	var help_url = host_url + "help/";
 	var icons_url = host_url + "icons/";
 
@@ -4083,8 +4083,8 @@ res = function() {
 			launchAndi(); //initialize ANDI
 		}
 	})();
-	console.log(res);
-}
-res();
-})
+// 	console.log(res);
+// }
+// res();
+// })
 
