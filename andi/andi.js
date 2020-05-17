@@ -563,7 +563,7 @@
 
 			var andiBar = "<section id='ANDI508' tabindex='-1' aria-label='ANDI' style='display:none'>" +
 				"<div id='ANDI508-header'>" +
-				"<h3 id='ANDI508-toolName-heading'><a id='ANDI508-toolName-link' class='ANDI508-sectionJump' href='#' aria-haspopup='dialog' aria-label='ANDI " + andiVersionNumber + "'><span id='ANDI508-module-name' data-andi508-moduleversion=''>&nbsp;</span>LIEUTENANT</br>DANDI</a></h3>" +
+				"<h5 id='ANDI508-toolName-heading'><a id='ANDI508-toolName-link' class='ANDI508-sectionJump' href='#' aria-haspopup='dialog' aria-label='ANDI " + andiVersionNumber + "'><span id='ANDI508-module-name' data-andi508-moduleversion=''>&nbsp;</span>LIEUTENANT</br>DANDI</a></h5>" +
 				"<div id='ANDI508-moduleMenu-container'>" +
 				moduleButtons +
 				"</div>" +
