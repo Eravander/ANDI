@@ -559,6 +559,8 @@
 				"<button role='menuitem' class='ANDI508-moduleMenu-option' id='ANDI508-moduleMenu-button-h'>hidden content</button>" +
 				//iANDI
 				"<button role='menuitem' class='ANDI508-moduleMenu-option' id='ANDI508-moduleMenu-button-i'>iframes</button>" +
+				//xANDI
+				"<button role='menuitem' class='ANDI508-moduleMenu-option' id='ANDI508-moduleMenu-button-x'>crawler</button>" +
 				"</div>";
 
 			var andiBar = "<section id='ANDI508' tabindex='-1' aria-label='ANDI' style='display:none'>" +
