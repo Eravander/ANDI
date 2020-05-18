@@ -336,7 +336,12 @@ body.ANDI508-testPage
 #ANDI508.ANDI508-module-i #ANDI508-module-name,
 #ANDI508.ANDI508-module-i #ANDI508-module-actions button.ANDI508-module-action-active
 	{color:#f3b4bf !important;} /*ffc0cb*/
-	
+	/*xANDI*/
+#ANDI508 .ANDI508-module-name-x,
+#ANDI508 #ANDI508-moduleMenu-button-x,
+#ANDI508.ANDI508-module-x #ANDI508-module-name,
+#ANDI508.ANDI508-module-x #ANDI508-module-actions button.ANDI508-module-action-active
+	{color:#acaafa !important;} /*ffc0cb*/
 #ANDI508 #ANDI508-module-name
 	{font:bold 20pt monospace !important; margin-right:1px; display:inline;}
 
