@@ -58,7 +58,7 @@
 	AndiSettings.elementHighlightsOn = true;
 
 	//Default Module
-	AndiModule.module = "f";
+	AndiModule.module = "x";
 
 	//===============//
 	// ANDI OBJECTS: //
