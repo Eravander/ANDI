@@ -41,6 +41,7 @@ function init_module(){
         
         andiCheck.areLabelForValid();
         andiCheck.areThereDisabledElements("elements");
+        andiBar.showStartUpSummary("Run all Modules",true);
     };
     
     function AndiAccesskeys(){
