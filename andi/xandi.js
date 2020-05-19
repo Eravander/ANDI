@@ -127,138 +127,138 @@ function init_module(){
                 $("#ANDI508-accesskeysFound").show();
             }
             
-            //Tab Order button
-            var moduleActionButtons = "<button id='ANDI508-tabOrder-button' aria-label='Tab Order Indicators' aria-pressed='false'>tab order"+overlayIcon+"</button>";
-            if(TestPageData.page_using_titleAttr)
-                moduleActionButtons += "<button id='ANDI508-titleAttributes-button' aria-label='Title Attributes' aria-pressed='false'>title attributes"+overlayIcon+"</button>";
-            if(testPageData.page_using_label)
-                moduleActionButtons += "<button id='ANDI508-labelTags-button' aria-label='Label Tags' aria-pressed='false'>label tags"+overlayIcon+"</button>";
+    //         //Tab Order button
+    //         var moduleActionButtons = "<button id='ANDI508-tabOrder-button' aria-label='Tab Order Indicators' aria-pressed='false'>tab order"+overlayIcon+"</button>";
+    //         if(TestPageData.page_using_titleAttr)
+    //             moduleActionButtons += "<button id='ANDI508-titleAttributes-button' aria-label='Title Attributes' aria-pressed='false'>title attributes"+overlayIcon+"</button>";
+    //         if(testPageData.page_using_label)
+    //             moduleActionButtons += "<button id='ANDI508-labelTags-button' aria-label='Label Tags' aria-pressed='false'>label tags"+overlayIcon+"</button>";
             
-            $("#ANDI508-module-actions").append(moduleActionButtons);
+    //         $("#ANDI508-module-actions").append(moduleActionButtons);
             
-            //Define tabOrder button functionality
-            $("#ANDI508-tabOrder-button").click(function(){
-                if($(this).attr("aria-pressed") == "false"){
-                    andiOverlay.overlayButton_on("overlay",$(this));
-                    andiOverlay.overlayTabOrder();
-                    AndiModule.activeActionButtons.tabOrder = true;
-                }
-                else{
-                    andiOverlay.overlayButton_off("overlay",$(this));
-                    andiOverlay.removeOverlay("ANDI508-overlay-tabSequence");
-                    AndiModule.activeActionButtons.tabOrder = false;
-                }
-                andiResetter.resizeHeights();
-                return false;
-            });
+    //         //Define tabOrder button functionality
+    //         $("#ANDI508-tabOrder-button").click(function(){
+    //             if($(this).attr("aria-pressed") == "false"){
+    //                 andiOverlay.overlayButton_on("overlay",$(this));
+    //                 andiOverlay.overlayTabOrder();
+    //                 AndiModule.activeActionButtons.tabOrder = true;
+    //             }
+    //             else{
+    //                 andiOverlay.overlayButton_off("overlay",$(this));
+    //                 andiOverlay.removeOverlay("ANDI508-overlay-tabSequence");
+    //                 AndiModule.activeActionButtons.tabOrder = false;
+    //             }
+    //             andiResetter.resizeHeights();
+    //             return false;
+    //         });
             
-            //Define titleAttributes button functionality
-            $("#ANDI508-titleAttributes-button").click(function(){
-                if($(this).attr("aria-pressed") == "false"){
-                    andiOverlay.overlayButton_on("overlay",$(this));
-                    andiOverlay.overlayTitleAttributes();
-                    AndiModule.activeActionButtons.titleAttributes = true;
-                }
-                else{
-                    andiOverlay.overlayButton_off("overlay",$(this));
-                    andiOverlay.removeOverlay("ANDI508-overlay-titleAttributes");
-                    AndiModule.activeActionButtons.titleAttributes = false;
-                }
-                andiResetter.resizeHeights();
-                return false;
-            });
+    //         //Define titleAttributes button functionality
+    //         $("#ANDI508-titleAttributes-button").click(function(){
+    //             if($(this).attr("aria-pressed") == "false"){
+    //                 andiOverlay.overlayButton_on("overlay",$(this));
+    //                 andiOverlay.overlayTitleAttributes();
+    //                 AndiModule.activeActionButtons.titleAttributes = true;
+    //             }
+    //             else{
+    //                 andiOverlay.overlayButton_off("overlay",$(this));
+    //                 andiOverlay.removeOverlay("ANDI508-overlay-titleAttributes");
+    //                 AndiModule.activeActionButtons.titleAttributes = false;
+    //             }
+    //             andiResetter.resizeHeights();
+    //             return false;
+    //         });
             
-            //Define titleAttributes button functionality
-            $("#ANDI508-labelTags-button").click(function(){
-                if($(this).attr("aria-pressed") == "false"){
-                    andiOverlay.overlayButton_on("overlay",$(this));
-                    andiOverlay.overlayLabelTags();
-                    AndiModule.activeActionButtons.labelTags = true;
-                }
-                else{
-                    andiOverlay.overlayButton_off("overlay",$(this));
-                    andiOverlay.removeOverlay("ANDI508-overlay-labelTags");
-                    AndiModule.activeActionButtons.labelTags = false;
-                }
-                andiResetter.resizeHeights();
-                return false;
-            });
+    //         //Define titleAttributes button functionality
+    //         $("#ANDI508-labelTags-button").click(function(){
+    //             if($(this).attr("aria-pressed") == "false"){
+    //                 andiOverlay.overlayButton_on("overlay",$(this));
+    //                 andiOverlay.overlayLabelTags();
+    //                 AndiModule.activeActionButtons.labelTags = true;
+    //             }
+    //             else{
+    //                 andiOverlay.overlayButton_off("overlay",$(this));
+    //                 andiOverlay.removeOverlay("ANDI508-overlay-labelTags");
+    //                 AndiModule.activeActionButtons.labelTags = false;
+    //             }
+    //             andiResetter.resizeHeights();
+    //             return false;
+    //         });
     
-            andiBar.focusIsOnInspectableElement();
-            andiBar.showElementControls();
-            andiBar.showStartUpSummary("Run all Modules",true);
-        }
-        else{
-            //No Focusable Elements were found
-            andiBar.hideElementControls();
-            andiBar.showStartUpSummary("No focusable elements were found on this page.");
-    }
+    //         andiBar.focusIsOnInspectableElement();
+    //         andiBar.showElementControls();
+    //         andiBar.showStartUpSummary("Run all Modules",true);
+    //     }
+    //     else{
+    //         //No Focusable Elements were found
+    //         andiBar.hideElementControls();
+    //         andiBar.showStartUpSummary("No focusable elements were found on this page.");
+    // }
         
-        andiAlerter.updateAlertList();
+    //     andiAlerter.updateAlertList();
         
-        AndiModule.engageActiveActionButtons([
-            "tabOrder",
-            "titleAttributes",
-            "labelTags"
-        ]);
+    //     AndiModule.engageActiveActionButtons([
+    //         "tabOrder",
+    //         "titleAttributes",
+    //         "labelTags"
+    //     ]);
         
-        $("#ANDI508").focus();
-    };
+    //     $("#ANDI508").focus();
+    // };
     
-    //This function will overlay the tab order sequence.
-    //It will take into account, tabindexes that are greater than zero and less than zero
-    AndiOverlay.prototype.overlayTabOrder = function(){
-        var tabindex;
-        var tabSequence = 0;
-        var overlayObject;
-        //PASS 1: Get tabindexes greater than 0:
-        var greaterThanZeroArray = []; //Will store elements with tabindex greater than 0
-        $("#ANDI508-testPage [tabindex].ANDI508-element").each(function(){
-            tabindex = $(this).attr("tabindex");
-            if(tabindex > 0)//tab index is greater than 0
-                greaterThanZeroArray.push(this); //Add to the array
-        });
-        //loop through the greater than zero array until all elements have been addressed
-        var i = 1;
-        var z = greaterThanZeroArray.length;
-        while(z > 0){
-            for(var x=0; x<greaterThanZeroArray.length; x++){
-                if($(greaterThanZeroArray[x]).attr("tabindex") == i){
-                    tabSequence++;
-                    overlayObject = andiOverlay.createOverlay("ANDI508-overlay-tabSequence ANDI508-overlay-tabSequence-greaterThanZero",tabSequence,"tabIndex="+i, i);
-                    andiOverlay.insertAssociatedOverlay($(greaterThanZeroArray[x]), overlayObject, true);
-                    z--;
-                }
-            }
-            i++;
-        }
+    // //This function will overlay the tab order sequence.
+    // //It will take into account, tabindexes that are greater than zero and less than zero
+    // AndiOverlay.prototype.overlayTabOrder = function(){
+    //     var tabindex;
+    //     var tabSequence = 0;
+    //     var overlayObject;
+    //     //PASS 1: Get tabindexes greater than 0:
+    //     var greaterThanZeroArray = []; //Will store elements with tabindex greater than 0
+    //     $("#ANDI508-testPage [tabindex].ANDI508-element").each(function(){
+    //         tabindex = $(this).attr("tabindex");
+    //         if(tabindex > 0)//tab index is greater than 0
+    //             greaterThanZeroArray.push(this); //Add to the array
+    //     });
+    //     //loop through the greater than zero array until all elements have been addressed
+    //     var i = 1;
+    //     var z = greaterThanZeroArray.length;
+    //     while(z > 0){
+    //         for(var x=0; x<greaterThanZeroArray.length; x++){
+    //             if($(greaterThanZeroArray[x]).attr("tabindex") == i){
+    //                 tabSequence++;
+    //                 overlayObject = andiOverlay.createOverlay("ANDI508-overlay-tabSequence ANDI508-overlay-tabSequence-greaterThanZero",tabSequence,"tabIndex="+i, i);
+    //                 andiOverlay.insertAssociatedOverlay($(greaterThanZeroArray[x]), overlayObject, true);
+    //                 z--;
+    //             }
+    //         }
+    //         i++;
+    //     }
         
-        //PASS 2: Get tabindex=0 and natively tabbable:
-        var titleText;
-        var lastRadioGroupName;
-        $("#ANDI508-testPage .ANDI508-element").each(function(){
-            tabindex = $(this).attr("tabindex");
-            if(tabindex < 0){
-                //tab index is negative
-                overlayObject = andiOverlay.createOverlay("ANDI508-overlay-alert ANDI508-overlay-tabSequence", "X", "not in tab order", 0);
-                andiOverlay.insertAssociatedOverlay(this, overlayObject, true);
-            }
-            else if(tabindex == 0 || ($(this).is(":tabbable") && !(tabindex > 0) )){
-                //tabindex is 0 or natively tabbable and tabindex is not greater than zero
+    //     //PASS 2: Get tabindex=0 and natively tabbable:
+    //     var titleText;
+    //     var lastRadioGroupName;
+    //     $("#ANDI508-testPage .ANDI508-element").each(function(){
+    //         tabindex = $(this).attr("tabindex");
+    //         if(tabindex < 0){
+    //             //tab index is negative
+    //             overlayObject = andiOverlay.createOverlay("ANDI508-overlay-alert ANDI508-overlay-tabSequence", "X", "not in tab order", 0);
+    //             andiOverlay.insertAssociatedOverlay(this, overlayObject, true);
+    //         }
+    //         else if(tabindex == 0 || ($(this).is(":tabbable") && !(tabindex > 0) )){
+    //             //tabindex is 0 or natively tabbable and tabindex is not greater than zero
                 
-                if($(this).is("input[type=radio][name]")){
-                    if(lastRadioGroupName !== undefined && lastRadioGroupName === $(this).attr("name"))
-                        return; //this is a subsequent radio button, don't add overlay
-                    else
-                        lastRadioGroupName = $(this).attr("name");
-                }
-                tabSequence++;
-                titleText = (tabindex == 0) ? "tabIndex=0" : "natively tabbable";
-                overlayObject = andiOverlay.createOverlay("ANDI508-overlay-tabSequence", tabSequence, titleText, 0);
-                andiOverlay.insertAssociatedOverlay(this, overlayObject, true);
-            }
-        });
-    };
+    //             if($(this).is("input[type=radio][name]")){
+    //                 if(lastRadioGroupName !== undefined && lastRadioGroupName === $(this).attr("name"))
+    //                     return; //this is a subsequent radio button, don't add overlay
+    //                 else
+    //                     lastRadioGroupName = $(this).attr("name");
+    //             }
+    //             tabSequence++;
+    //             titleText = (tabindex == 0) ? "tabIndex=0" : "natively tabbable";
+    //             overlayObject = andiOverlay.createOverlay("ANDI508-overlay-tabSequence", tabSequence, titleText, 0);
+    //             andiOverlay.insertAssociatedOverlay(this, overlayObject, true);
+    //         }
+    //     });
+    // };
     
     //This function will overlay the label elements.
     // AndiOverlay.prototype.overlayLabelTags = function(){
