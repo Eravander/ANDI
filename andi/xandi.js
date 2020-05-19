@@ -300,6 +300,6 @@ function init_module() {
     };
 
     xANDI.analyze();
-  //  xANDI.results();
+    xANDI.results();
 
 }//end init
