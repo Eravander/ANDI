@@ -113,20 +113,20 @@ function init_module(){
         andiBar.updateResultsSummary("Focusable Elements Found: "+testPageData.andiElementIndex);
         
         //Are There Focusable Elements?
-        if(testPageData.andiElementIndex > 0){
+        // if(testPageData.andiElementIndex > 0){
             //Yes, Focusable Elements were found
             
-            //Accesskeys List:
-            if(xANDI.accesskeys.getListHtml()){
-                $("#ANDI508-additionalPageResults").append("<p id='ANDI508-accesskeysFound'>AccessKeys: "+"{ "+xANDI.accesskeys.getListHtml()+"}</p>");
-                $("#ANDI508-accesskeysFound").find("a").each(function(){
-                    andiFocuser.addFocusClick($(this));
-                    $(this).on("mouseover" 	,andiLaser.drawAlertLaser);
-                    $(this).on("click"		,andiLaser.eraseLaser);
-                    $(this).on("mouseleave"	,andiLaser.eraseLaser);
-                });
-                $("#ANDI508-accesskeysFound").show();
-            }
+            // //Accesskeys List:
+            // if(xANDI.accesskeys.getListHtml()){
+            //     $("#ANDI508-additionalPageResults").append("<p id='ANDI508-accesskeysFound'>AccessKeys: "+"{ "+xANDI.accesskeys.getListHtml()+"}</p>");
+            //     $("#ANDI508-accesskeysFound").find("a").each(function(){
+            //         andiFocuser.addFocusClick($(this));
+            //         $(this).on("mouseover" 	,andiLaser.drawAlertLaser);
+            //         $(this).on("click"		,andiLaser.eraseLaser);
+            //         $(this).on("mouseleave"	,andiLaser.eraseLaser);
+            //     });
+            //     $("#ANDI508-accesskeysFound").show();
+            // }
             
     //         //Tab Order button
     //         var moduleActionButtons = "<button id='ANDI508-tabOrder-button' aria-label='Tab Order Indicators' aria-pressed='false'>tab order"+overlayIcon+"</button>";
@@ -298,7 +298,8 @@ function init_module(){
         
     //     andiBar.displayOutput(elementData, element, addOnProps);
     //     andiBar.displayTable(elementData, element, addOnProps);
-    // };
+    // 
+    };
     
     xANDI.analyze();
     xANDI.results();
