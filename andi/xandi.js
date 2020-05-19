@@ -310,7 +310,7 @@ function init_module() {
 //==========================================//
 // function init_module(){
 
-    // var xgandiVersionNumber = "6.0.2";
+    var xgandiVersionNumber = "6.0.2";
     
     //TODO: add <video>
     
