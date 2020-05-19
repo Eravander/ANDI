@@ -315,7 +315,7 @@ function init_module() {
     //TODO: add <video>
     
     //create xgANDI instance
-    // var xgANDI = new AndiModule(xgandiVersionNumber,"g");
+    var xgANDI = new AndiModule(xgandiVersionNumber,"x");
     
     //This function removes markup in the test page that was added by this module
     AndiModule.cleanup = function(testPage, element){
